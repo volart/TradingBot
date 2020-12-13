@@ -12,7 +12,7 @@ public class CarefulStrategy extends AbstractStrategy {
   public int nextBid() {
     // We wait until the opponent has spent money more than we do.
     // In the worst case, we will lose a round and save money(we don't know the opponent's strategy).
-    if (lastUpdate.getMuOpposer() >= lastUpdate.getMuOwn()) {
+    if (lastUpdate.getMuOpposer() > lastUpdate.getMuOwn()) {
       //Also a strategy when two bidders pay by 0 MU is a Nash Equilibrium
       return 0;
     }

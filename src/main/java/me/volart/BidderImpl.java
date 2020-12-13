@@ -9,6 +9,13 @@ public class BidderImpl implements Bidder {
   
   private Strategy strategy;
   
+  public BidderImpl() {
+  }
+  
+  protected BidderImpl(Strategy strategy) {
+    this.strategy = strategy;
+  }
+  
   @Override
   public void init(int quantity, int cash) {
     this.strategy = StrategyFactory.create(new Unit(quantity, cash));

@@ -2,6 +2,9 @@ package me.volart.auction;
 
 import me.volart.Bidder;
 
+/**
+ * Class that describe auction rules
+ */
 public class Auction {
   
   private final Bidder first;
@@ -15,6 +18,8 @@ public class Auction {
   }
   
   public void init(int quantity, int cash) {
+    qu = quantity;
+    
     first.init(quantity, cash);
     second.init(quantity, cash);
   }
