@@ -1,4 +1,4 @@
-package me.volart.auction;
+package me.volart;
 
 /**
  * Represents a bidder for the action.
@@ -27,4 +27,11 @@ public interface Bidder {
    * @param other the bid of the other bidder
    */
   void bids(int own, int other);
+  
+  /**
+   * Shows a status of the bidder after the auction
+   *
+   * @return WINNER, LOSER or DRAW
+   */
+  BidderStatus getStatus();
 }

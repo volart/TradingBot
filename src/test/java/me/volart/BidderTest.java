@@ -1,4 +1,4 @@
-package me.volart.auction;
+package me.volart;
 
 import org.junit.Test;
 
