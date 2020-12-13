@@ -14,3 +14,11 @@ Each bidder aims to get a larger amount than its competitor.
 
 In an auction wins the program that is able to get more QU than the other.
 With a tie, the program that retains more MU wins.
+
+
+### Run and usage
+
+`mvn test` - to run tests of the project
+
+This project is utils to use inbuilt in some other project, so there is no main class of other entry points. 
+The `Bidder` interface and its realisation `BidderImpl` are started points to look at.
